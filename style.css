@@ -1,27 +1,9 @@
 
-/* =====================================
-   B'LIFE INTERIORS - VIDEO GALLERY
-===================================== */
+/* VIDEO GALLERY */
 
 .video-gallery {
-  background: #211d19;
+  background: #17130f;
   color: #fff;
-  padding: 95px 9%;
-}
-
-.video-gallery .eyebrow {
-  color: #ef8015;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-.video-gallery h2 {
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(40px, 5vw, 62px);
-  font-weight: 500;
-  line-height: 1.2;
-  margin-top: 12px;
 }
 
 .video-gallery h2 span {
@@ -29,37 +11,28 @@
 }
 
 .video-gallery-intro {
+  margin: 15px 0 30px;
   color: #c9beb2;
-  font-size: 14px;
-  margin-top: 15px;
-  margin-bottom: 35px;
 }
-
-/* VIDEO GRID */
 
 .video-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 25px;
+  gap: 24px;
   margin-top: 30px;
 }
-
-/* VIDEO CARD */
 
 .video-card {
   background: #302a24;
   border: 1px solid #51473e;
-  border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
 .video-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 12px 30px #00000050;
+  transform: translateY(-5px);
 }
-
-/* VIDEO PLAYER */
 
 .video-card video {
   display: block;
@@ -69,105 +42,26 @@
   background: #000;
 }
 
-/* VIDEO TITLE */
-
 .video-card h3 {
+  padding: 18px;
   color: #fff;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 19px;
   font-weight: 500;
-  padding: 18px 20px;
-  margin: 0;
 }
 
-.video-card h3:hover {
-  color: #ef8015;
+.video-gallery .eyebrow {
+  margin-bottom: 12px;
 }
-
-/* =====================================
-   FOOTER IMPROVEMENTS
-===================================== */
-
-.footer {
-  background: #14110e;
-  color: #c9beb2;
-  text-align: center;
-  padding: 45px 20px 25px;
-}
-
-.footer-logo img {
-  width: 190px;
-  max-height: 80px;
-  object-fit: contain;
-  background: #fff;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-.footer .social-links {
-  margin-top: 25px;
-  padding-top: 20px;
-  border-top: 1px solid #51473e;
-}
-
-.footer .social-links a:hover {
-  color: #ef8015;
-}
-
-.footer small {
-  display: block;
-  margin-top: 25px;
-  color: #a99c8e;
-}
-
-/* =====================================
-   VIDEO GALLERY - TABLET
-===================================== */
 
 @media (max-width: 950px) {
-  .video-gallery {
-    padding: 75px 6%;
-  }
-
   .video-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
   }
 }
 
-/* =====================================
-   VIDEO GALLERY - MOBILE
-===================================== */
-
-@media (max-width: 680px) {
-  .video-gallery {
-    padding: 70px 7%;
-  }
-
-  .video-gallery h2 {
-    font-size: 40px;
-  }
-
-  .video-gallery-intro {
-    font-size: 13px;
-  }
-
+@media (max-width: 600px) {
   .video-grid {
     grid-template-columns: 1fr;
-    gap: 22px;
-  }
-
-  .video-card video {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-  }
-
-  .video-card h3 {
-    font-size: 18px;
-    padding: 15px;
-  }
-
-  .footer-logo img {
-    width: 160px;
   }
 }
