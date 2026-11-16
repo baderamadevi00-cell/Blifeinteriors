@@ -4,24 +4,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="description" content="B'Life Interiors - Design, plan and transform your dream spaces.">
-
   <title>B'Life Interiors | Design. Plan. Transform.</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
+
+  <!-- VIDEO GALLERY STYLES -->
+  <style>
+    .video-gallery {
+      background: #111;
+      color: #fff;
+    }
+
+    .video-gallery h2 span {
+      color: #f28a18;
+    }
+
+    .video-gallery-intro {
+      margin: 12px 0 30px;
+      color: #ccc;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .video-card {
+      background: #1d1d1d;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #333;
+    }
+
+    .video-card video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #000;
+    }
+
+    .video-card h3 {
+      padding: 15px;
+      margin: 0;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <!-- HEADER -->
 <header class="header">
-
   <a href="#home" class="logo">
     <img src="./blife-logo.png.jpeg" alt="B'Life Interiors Logo">
   </a>
@@ -33,24 +80,20 @@
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#projects">Gallery</a>
+    <a href="#videos">Videos</a>
     <a href="#contact">Contact</a>
     <a href="#contact" class="nav-button">Get Consultation</a>
   </nav>
-
 </header>
 
 <main>
 
 <!-- HERO SECTION -->
 <section class="hero" id="home">
-
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
-
-    <p class="eyebrow">
-      B'LIFE INTERIORS · DESIGN · PLAN · TRANSFORM
-    </p>
+    <p class="eyebrow">B'LIFE INTERIORS · DESIGN · PLAN · TRANSFORM</p>
 
     <h1>
       From Ideas to<br>
@@ -70,32 +113,26 @@
          class="btn outline"
          target="_blank"
          rel="noopener noreferrer">
-         Book a Consultation
+        Book a Consultation
       </a>
     </div>
-
   </div>
 
   <div class="hero-caption">ELEGANCE IN EVERY DETAIL</div>
-
 </section>
 
 <!-- ABOUT SECTION -->
 <section class="about section" id="about">
-
   <p class="eyebrow">WELCOME TO B'LIFE INTERIORS</p>
 
   <div class="about-grid">
-
     <h2>
       Spaces designed<br>
       around <span>your story.</span>
     </h2>
 
     <div>
-      <p class="lead">
-        Every space has a story. Let's make yours beautiful.
-      </p>
+      <p class="lead">Every space has a story. Let's make yours beautiful.</p>
 
       <p>
         At B'Life Interiors, we believe that great interiors
@@ -108,16 +145,12 @@
         Let's discuss your space ↗
       </a>
     </div>
-
   </div>
-
 </section>
 
 <!-- SERVICES SECTION -->
 <section class="services section dark" id="services">
-
   <div class="section-heading">
-
     <div>
       <p class="eyebrow">WHAT WE DO</p>
       <h2>Our Interior <span>Services.</span></h2>
@@ -127,11 +160,9 @@
       Beautifully planned spaces for the way you live,
       work and relax.
     </p>
-
   </div>
 
   <div class="service-grid">
-
     <article class="service-card">
       <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Residential living room">
       <div>
@@ -167,18 +198,14 @@
         <p>Organised spaces, better living.</p>
       </div>
     </article>
-
   </div>
-
 </section>
 
 <!-- WHY CHOOSE US -->
 <section class="why section">
-
   <div class="why-image"></div>
 
   <div class="why-content">
-
     <p class="eyebrow">THE B'LIFE DIFFERENCE</p>
 
     <h2>
@@ -197,14 +224,11 @@
       <div><b>✦</b> Attention to Detail</div>
       <div><b>✦</b> Customer-focused Support</div>
     </div>
-
   </div>
-
 </section>
 
-<!-- GALLERY SECTION -->
+<!-- IMAGE GALLERY -->
 <section class="gallery section" id="projects">
-
   <p class="eyebrow">DESIGN INSPIRATION</p>
 
   <h2>Explore Beautiful <span>Spaces.</span></h2>
@@ -214,13 +238,11 @@
   </p>
 
   <div class="gallery-grid">
-
     <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1100&q=85" alt="Elegant living room inspiration">
 
     <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Modern interior inspiration">
 
     <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Contemporary interior inspiration">
-
   </div>
 
   <p class="note">
@@ -228,27 +250,59 @@
     approved B'Life Interiors project photos before describing
     them as completed company projects.
   </p>
+</section>
 
+<!-- NEW VIDEO GALLERY SECTION -->
+<section class="video-gallery section" id="videos">
+  <p class="eyebrow">WATCH OUR WORK</p>
+
+  <h2>Our Video <span>Gallery.</span></h2>
+
+  <p class="video-gallery-intro">
+    Explore our interior design videos and creative spaces.
+  </p>
+
+  <div class="video-grid">
+
+    <div class="video-card">
+      <video controls preload="metadata" playsinline>
+        <source src="./videos/video%201.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+      <h3>Video 1</h3>
+    </div>
+
+    <div class="video-card">
+      <video controls preload="metadata" playsinline>
+        <source src="./videos/video%202.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+      <h3>Video 2</h3>
+    </div>
+
+    <div class="video-card">
+      <video controls preload="metadata" playsinline>
+        <source src="./videos/video%203.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+      <h3>Video 3</h3>
+    </div>
+
+  </div>
 </section>
 
 <!-- CONTACT SECTION -->
 <section class="contact section dark" id="contact">
-
-  <p class="eyebrow">
-    LET'S BUILD YOUR DREAM SPACE TOGETHER
-  </p>
+  <p class="eyebrow">LET'S BUILD YOUR DREAM SPACE TOGETHER</p>
 
   <h2>
     Ready to transform<br>
     <span>your space?</span>
   </h2>
 
-  <p>
-    Get in touch with B'Life Interiors to discuss your ideas.
-  </p>
+  <p>Get in touch with B'Life Interiors to discuss your ideas.</p>
 
   <div class="contact-buttons">
-
     <a class="btn orange" href="tel:+917731912333">
       Call 7731912333
     </a>
@@ -257,30 +311,26 @@
        href="https://wa.me/917731912333"
        target="_blank"
        rel="noopener noreferrer">
-       Chat on WhatsApp
+      Chat on WhatsApp
     </a>
-
   </div>
 
-  <!-- SOCIAL MEDIA LINKS -->
   <div class="social-links">
-
     <a href="https://www.instagram.com/blifeinteriors?exln=ZW56cnpwdzN2ZnVh"
        target="_blank"
        rel="noopener noreferrer">
-       ◎ Instagram
+      ◎ Instagram
     </a>
 
     <a href="https://www.facebook.com/share/1CyMSmoAPh/"
        target="_blank"
        rel="noopener noreferrer">
-       f Facebook
+      f Facebook
     </a>
 
     <span class="social-coming-soon">
       ▶ YouTube – Coming Soon
     </span>
-
   </div>
 
   <p class="social-note">
@@ -290,44 +340,38 @@
   <p class="location">
     Hyderabad · Contact us for your interior design enquiry
   </p>
-
 </section>
 
 </main>
 
 <!-- FOOTER SECTION -->
 <footer class="footer">
-
   <a href="#home" class="footer-logo">
-    <img src="./blife-logo.png.jpeg"
-         alt="B'Life Interiors Logo">
+    <img src="./blife-logo.png.jpeg" alt="B'Life Interiors Logo">
   </a>
 
   <p>DESIGN · PLAN · TRANSFORM</p>
 
   <div class="social-links">
-
     <a href="https://www.instagram.com/blifeinteriors?exln=ZW56cnpwdzN2ZnVh"
        target="_blank"
        rel="noopener noreferrer">
-       Instagram
+      Instagram
     </a>
 
     <a href="https://www.facebook.com/share/1CyMSmoAPh/"
        target="_blank"
        rel="noopener noreferrer">
-       Facebook
+      Facebook
     </a>
 
     <span>YouTube – Coming Soon</span>
-
   </div>
 
   <small>
     © <span id="year"></span> B'Life Interiors.
     All rights reserved.
   </small>
-
 </footer>
 
 <!-- FLOATING WHATSAPP BUTTON -->
@@ -335,11 +379,10 @@
    href="https://wa.me/917731912333"
    target="_blank"
    rel="noopener noreferrer">
-   WhatsApp
+  WhatsApp
 </a>
 
 <script src="script.js"></script>
 
 </body>
 </html>
-
